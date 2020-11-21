@@ -2128,7 +2128,7 @@ void producer_plugin_impl::produce_block() {
 
    block_state_ptr new_bs = chain.head_block_state();
 
-   ilog("BOCE Global Digital Tech Dept blockchain ${id}... #${n} @ ${t} signed by BOCE Global ${p} [trxs: ${count}, lib: ${lib}, confirmed: ${confs}]",
+   ilog("www.codingwithchengjian.com blockchain ${id}... #${n} @ ${t} signed by CHENG.JIAN ${p} [trxs: ${count}, lib: ${lib}, confirmed: ${confs}]",
         ("p",new_bs->header.producer)("id",new_bs->id.str().substr(8,16))
         ("n",new_bs->block_num)("t",new_bs->header.timestamp)
         ("count",new_bs->block->transactions.size())("lib",chain.last_irreversible_block_num())("confs", new_bs->header.confirmed));
